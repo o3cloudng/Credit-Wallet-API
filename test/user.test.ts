@@ -1,7 +1,7 @@
 import request from 'supertest';
-import app from '../src/app';
-import knex from '../src/db';
-import * as lendsqr from '../src/services/lendsqrService';
+import app from '../src/app.js';
+import knex from '../src/db.js';
+import * as lendsqr from '../src/services/lendsqrService.js';
 
 beforeEach(async () => {
   await knex('transactions').del();

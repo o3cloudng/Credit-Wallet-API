@@ -1,4 +1,4 @@
-import { migrateLatest, truncateAll, knex } from './db';
+import { migrateLatest, truncateAll, knex } from './db.js';
 
 beforeAll(async () => {
   await migrateLatest();

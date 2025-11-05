@@ -1,4 +1,4 @@
-import { knex } from './db';
+import { knex } from './db.js';
 import bcrypt from 'bcrypt';
 
 export async function createUser(payload?: { full_name?: string; email?: string; password?: string }) {

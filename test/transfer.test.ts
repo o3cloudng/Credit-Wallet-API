@@ -1,7 +1,7 @@
 import request from 'supertest';
-import app from '../src/app';
-import { createUser, fundWallet } from './factories';
-import { knex } from './db';
+import app from '../src/app.js';
+import { createUser, fundWallet } from './factories.js';
+import { knex } from './db.js';
 
 describe('Transfer API', () => {
   let sender: any;
