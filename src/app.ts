@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
 
-app.use("/", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.send("Welcome to the Credit Wallet Service API - Lendsqr");
 });
 app.use("/api", routes);
