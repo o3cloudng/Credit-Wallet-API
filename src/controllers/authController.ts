@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
-import knex from "../db";
-import { loginSchema } from "../validators/authSchema";
 import { ZodError } from "zod";
-import { generateToken } from "../utils/jwt";
+import knex from "../db.js";
+import { loginSchema } from "../validators/authSchema.js";
+import { generateToken } from "../utils/jwt.js";
 
 export async function loginUser(req: Request, res: Response) {
   try {

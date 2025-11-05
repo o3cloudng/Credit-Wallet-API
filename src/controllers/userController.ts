@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import knex from "../db";
-import { isBlacklistedByLendsqr } from "../services/lendsqrService";
+import knex from "../db.js";
+import { isBlacklistedByLendsqr } from "../services/lendsqrService.js";
 import bcrypt from "bcrypt";
 import { randomUUID } from "crypto";
-import { createUserSchema } from "../validators/userSchema";
+import { createUserSchema } from "../validators/userSchema.js";
 import { ZodError } from "zod";
 import _ from "lodash";
 

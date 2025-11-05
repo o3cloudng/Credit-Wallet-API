@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import knex from '../db';
-import { toKobo, fromKobo } from '../utils/money';
+import knex from '../db.js';
+import { toKobo, fromKobo } from '../utils/money.js';
 
 export async function getWallet(req: Request, res: Response) {
   if (!req.user) {
