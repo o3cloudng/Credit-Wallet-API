@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { createUser, getAllUsers, profileUser} from './controllers/userController';
-import { loginUser } from "../src/controllers/authController";
-import { fund, transfer, withdraw, getWallet } from './controllers/walletController';
-import fauxAuth from './middlewares/fauxAuth';
+import { createUser, getAllUsers, profileUser} from './controllers/userController.js';
+import { loginUser } from "../src/controllers/authController.js";
+import { fund, transfer, withdraw, getWallet } from './controllers/walletController.js';
+import fauxAuth from './middlewares/fauxAuth.js';
 
 const router = Router();
 // User
