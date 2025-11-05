@@ -38,7 +38,7 @@ export async function up(knex: Knex): Promise<void> {
       .references('id')
       .inTable('wallets')
       .onDelete('CASCADE');
-    t.enum('type', ['fund', 'transfer_out', 'transfer_out', 'withdraw']).notNullable();
+    t.enum('type', ['fund', 'transfer_out', 'transfer_in', 'withdraw']).notNullable();
     t.bigInteger('amount_kobo').notNullable(); // always in kobo
     t.json('metadata').nullable();
     t.timestamps(true, true);
