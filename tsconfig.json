@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext", // Node 20+ supports ESNext
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./dist",
