@@ -1,8 +1,10 @@
 # 💸 Demo Credit Wallet App
 
 A simple **Loan Application App** built with **Node.js**, **Express**, and **Knex.js** using **MySQL** as the database.  
-It allows users to registerand login to create wallets, manage balances, and transfer funds between users safely and atomically.  
+It allows users to register and login to create wallets, manage balances, and transfer funds between users safely and atomically.  
 Future versions can include full loan management, repayment tracking, and credit scoring.
+
+Hosted: https://olumide-oderinde-lendsqr-be-test.vercel.app/
 
 ---
 
